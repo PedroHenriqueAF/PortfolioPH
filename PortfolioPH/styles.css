@@ -154,6 +154,9 @@ header nav ul li a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
   border: 1px solid #729440;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
