@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/PH_Logo_Quadrado.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="https://www.goodreads.com/user/show/187148509-pedro-henrique" target="_blank">
+        <img class="PH_Logo" src="./assets/PH_Logo.png" alt="Logo PH">
+      </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hello there, I'm Pedro Henrique, also known as PH</h2>
+        <p>I'm an delighted student by learning about Database and Back-End applications. 
+          At the time of my undergraduate studies, I've mastered in applying my skills on 
+          Object-Oriented Programming and Database Modeling. I'm known as an "one of a kind"
+          person when it comes to my personality, in my free time, I like to play games, I work out
+          for over a year, and I love to read books, in which if you're curious about the books I read
+          there's a secret button to this website!
+        </p>
+      </div>
+
+      <div class="headshot">
+        <img src="./assets/eu.jpg" alt="Fotinha PH">
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="./assets/html-logo.png" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="./assets/css-logo.png" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="./assets/js-logo.png" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="./assets/java-logo.png" alt="java logo">
+          <span>Java</span>
+        </div>
+        
+        <div class="cell">
+          <img src="./assets/c-logo.png" alt="c logo">
+          <span>C/C++</span>
+        </div>
+
+        <div class="cell">
+          <img src="./assets/oracle-logo.png" alt="oracle logo">
+          <span>Oracle Database</span>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="project-title">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+          <div class="project-section">
+              <h3>Ticket Generator</h3>
+              <p>
+                  A FrontEnd Mentor Ticket Generator Project
+              </p>
+              <a href="https://github.com/PedroHenriqueAF/PedroHFrontend" class="project-link">View Project</a>
+          </div>
+          <div class="project-section">
+              <h3>Slay The AED</h3>
+              <p>
+                  A "Slay the Spire" like game on C/C++
+              </p>
+              <a href="https://github.com/Deltarako/AED-2023.2" class="project-link">View Project</a>
+          </div>
+          <div class="project-section">
+              <h3>Games API</h3>
+              <p>
+                A Digital Games API focused on building a Video Game Review community   
+              </p>
+              <a href="https://github.com/Miltchola/api_games" class="project-link">View Project</a>
+          </div>
+      </div>
+  </section>
+
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="contact-section-text">
+          You can get in contact with me in my follow socials:
+            <p>Email: phafonseca2003@gmail.com</p>
+            <p>Telefone: (71) 99936-2268</p>
+            <p>Instagram: peagas_f</p>
+            <p>LinkedIn: Pedro Henrique Araújo Fonseca</p>
+            <p>Alternatively, you can send a message from here -></p>
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Pedro Henrique - Portfolio. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
