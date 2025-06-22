@@ -1,146 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Pedro Henrique - Desenvolvedor Backend e Database">
+  <meta name="keywords" content="desenvolvedor, backend, database, java, oracle, portfólio">
+  <meta name="author" content="Pedro Henrique Araújo Fonseca">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link rel="icon" href="./assets/PH_Logo_Quadrado.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 
-  <title>Portfolio</title>
+  <title>Pedro Henrique Portfolio</title>
 </head>
 <body>
-  <header>
-    <div>
-      <a href="https://www.goodreads.com/user/show/187148509-pedro-henrique" target="_blank">
-        <img class="PH_Logo" src="./assets/PH_Logo.png" alt="Logo PH">
-      </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- Progress Bar -->
+  <div class="progress-bar"></div>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="https://www.goodreads.com/user/show/187148509-pedro-henrique" target="_blank" class="logo-link">
+          <img class="logo" src="./assets/PH_Logo.png" alt="Logo PH">
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
   </header>
+
   <main>
-
-    <section class="hero-section">
-      <div class="text">
-        <h2>Hello there, I'm Pedro Henrique, also known as PH</h2>
-        <p>I'm an delighted student by learning about Database and Back-End applications. 
-          At the time of my undergraduate studies, I've mastered in applying my skills on 
-          Object-Oriented Programming and Database Modeling. I'm known as an "one of a kind"
-          person when it comes to my personality, in my free time, I like to play games, I work out
-          for over a year, and I love to read books, in which if you're curious about the books I read
-          there's a secret button to this website!
-        </p>
-      </div>
-
-      <div class="headshot">
-        <img src="./assets/eu.jpg" alt="Fotinha PH">
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hello, I am <span class="highlight">Pedro Henrique</span>
+            </h1>
+            <p class="hero-subtitle" id="typing-text">
+              Backend & Database Developer
+            </p>
+            <p class="hero-description">
+              I am a student passionate about learning about Database and Backend applications. 
+              During my undergraduate studies, I developed skills in Object Oriented Programming 
+              and Database Modeling. I am known as a "unique" person when it comes to my personality. 
+              In my free time, I like to play games, I have been working out for over a year and I love reading books,
+              if you are curious about the books I read, there is a secret button on this website!
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">See Projects</a>
+              <a href="#contact" class="btn btn-secondary">Get in Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="./assets/eu.jpg" alt="Pedro Henrique" class="profile-image">
+            <div class="floating-elements">
+              <div class="floating-icon" style="--delay: 0s">
+                <i class="fab fa-java"></i>
+              </div>
+              <div class="floating-icon" style="--delay: 1s">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="floating-icon" style="--delay: 2s">
+                <i class="fab fa-js-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="skills-section">
-      <h2>Skills</h2>
-      <div class="text">
-          I have knowledge on the following systens and coding languages:
-      </div>
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          I have knowledge in the following systems and programming languages:
+        </p>
+        
+        <div class="skills-grid">
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="./assets/html-logo.png" alt="HTML5">
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+          </div>
+          
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="./assets/css-logo.png" alt="CSS3">
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+          </div>
+          
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="./assets/js-logo.png" alt="JavaScript">
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+          </div>
+          
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <img src="./assets/java-logo.png" alt="Java">
+            </div>
+            <h3 class="skill-name">Java</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+          </div>
+          
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <img src="./assets/c-logo.png" alt="C/C++">
+            </div>
+            <h3 class="skill-name">C/C++</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+          </div>
 
-      <div class="cells">
-        <div class="cell">
-          <img src="./assets/html-logo.png" alt="html logo">
-          <span>HTML</span>
-        </div>
-        
-        <div class="cell">
-          <img src="./assets/css-logo.png" alt="css logo">
-          <span>CSS</span>
-        </div>
-        
-        <div class="cell">
-          <img src="./assets/js-logo.png" alt="javascript logo">
-          <span>JavaScript</span>
-        </div>
-        
-        <div class="cell">
-          <img src="./assets/java-logo.png" alt="java logo">
-          <span>Java</span>
-        </div>
-        
-        <div class="cell">
-          <img src="./assets/c-logo.png" alt="c logo">
-          <span>C/C++</span>
+          <div class="skill-card" data-category="database">
+            <div class="skill-icon">
+              <img src="./assets/oracle-logo.png" alt="Oracle Database">
+            </div>
+            <h3 class="skill-name">Oracle Database</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+          </div>
         </div>
 
-        <div class="cell">
-          <img src="./assets/oracle-logo.png" alt="oracle logo">
-          <span>Oracle Database</span>
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="database">Database</button>
         </div>
       </div>
     </section>
 
-
-    <section id="projects" class="project-title">
-      <h2>My Projects</h2>
-      <div class="projects-grid">
-          <div class="project-section">
-              <h3>Ticket Generator</h3>
-              <p>
-                  A FrontEnd Mentor Ticket Generator Project
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-ticket-alt"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Ticket Generator</h3>
+              <p class="project-description">
+                Responsive ticket generator developed as a challenge from Frontend Mentor. 
+                Implements form validation, responsive design and dynamic interactions.
               </p>
-              <a href="https://github.com/PedroHenriqueAF/PedroHFrontend" class="project-link">View Project</a>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PedroHenriqueAF/PedroHFrontend" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  See Code
+                </a>
+                <a href="#" class="project-link demo-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Demo (Coming Soon)
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-section">
-              <h3>Slay The AED</h3>
-              <p>
-                  A "Slay the Spire" like game on C/C++
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-gamepad"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Slay The AED</h3>
+              <p class="project-description">
+                Game inspired by 'Slay the Spire' developed in C/C++. Implements card mechanics, 
+                battle system and resource management.
               </p>
-              <a href="https://github.com/Deltarako/AED-2023.2" class="project-link">View Project</a>
+              <div class="project-tech">
+                <span class="tech-tag">C/C++</span>
+                <span class="tech-tag">Estruturas de Dados</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Deltarako/AED-2023.2" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  See Code
+                </a>
+                <a href="#" class="project-link demo-link">
+                  <i class="fas fa-download"></i>
+                  Download (Coming Soon)
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="project-section">
-              <h3>Games API</h3>
-              <p>
-                A Digital Games API focused on building a Video Game Review community   
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-server"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Games API</h3>
+              <p class="project-description">
+                RESTful API for a game review community. Includes authentication, complete CRUD 
+                and evaluation system.
               </p>
-              <a href="https://github.com/Miltchola/api_games" class="project-link">View Project</a>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Oracle Database</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Miltchola/api_games" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  See Code
+                </a>
+                <a href="#" class="project-link demo-link">
+                  <i class="fas fa-book"></i>
+                  Documentation (Coming Soon)
+                </a>
+              </div>
+            </div>
           </div>
-      </div>
-  </section>
-
-
-    <section id="contact" class="contact-section">
-      <h2>Contact</h2>
-
-      <div class="group">
-        <div class="contact-section-text">
-          You can get in contact with me in my follow socials:
-            <p>Email: phafonseca2003@gmail.com</p>
-            <p>Telefone: (71) 99936-2268</p>
-            <p>Instagram: peagas_f</p>
-            <p>LinkedIn: Pedro Henrique Araújo Fonseca</p>
-            <p>Alternatively, you can send a message from here -></p>
         </div>
+      </div>
+    
 
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+          <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>You can contact me through the following networks:</p>
+            <ul>
+              <li><i class="fas fa-envelope"></i> phafonseca2003@gmail.com</li>
+              <li><i class="fas fa-phone"></i> (71) 99936-2268</li>
+              <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/peagas_f" target="_blank">peagas_f</a></li>
+              <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/pedro-henrique-araujo-fonseca/" target="_blank">Pedro Henrique Araújo Fonseca</a></li>
+            </ul>
+            <p>Or send me a message through the form below:</p>
+          </div>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
 
-          <label for="email">Email</label>
-          <input type="email" id="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
 
-          <label for="message">Message</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="6" required></textarea>
 
-          <button type="submit">Send Message</button>
-        </form>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-success" style="display:none;">Message sent successfully!</div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
